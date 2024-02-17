@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/da5520b486.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/good-foot" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Beaches</title>
+  </head>
+
+  
+  <body>
+    <header>
+        <div class="menu">
+          <div class="row">
+            <div class="col box">
+              <a>Local Tours</a>
+            </div>
+            <div class="col box">
+              <a>Red Lane® Spa</a>
+            </div>
+            <div class="col box">
+              <a>Before You Arrive</a>
+            </div>
+            <div class="col box">
+              <a>Already Booked?</a>
+            </div>
+            <div class="col box">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      <nav>
+        <div class="col-9">
+          <img class="navImg" src="./img/unnamed.png" />
+        </div>
+        <div class="navContainer">
+          <div class="textContainer column">
+            <h2 class="mid-txt mb-1 mobile-btn">Book Now</h2>
+            <p class="tiny-txt mobile-none">Check Rates & Availability</p>
+          </div>
+          <div class="vertical-separator mobile-none"></div>
+          <div class="nav-icon">
+            <i class="fas fa-ellipsis-v fa-3x"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Top-->
+      <div class="main-container">
+        <div class="middle-container">
+          <div class="topText mb-5">
+            <h2 class="mid-txt2">Only The World's Best Serves</h2>
+            <h1 class="lrg-txt">The World's Best</h1>
+
+            <div class="row separatorContainer">
+              <div class="horizontal-separator2"></div>
+              <div class="row starContainer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="horizontal-separator"></div>
+            </div>
+
+            <h2 class="mid-txt3">Always Included. Always Unlimited</h2>
+          </div>
+          <img class="premium" src="./img/premium.png" />
+        </div>
+      </div>
+
+      <!--Hallmark-->
+      <section id="hallmark">
+        <div class="hallmark-container">
+          <div class="excellence">
+            <h1 class="blueTitle">Hallmark of Excellence</h1>
+            <div class="horizontal-separator3"></div>
+            <div class="smallParagraph">
+              <p class="hallmarkP">
+                As part of the 5-Star Luxury Included® experience, Beaches only
+                serves premium brand liquors—and they’re always included and
+                unlimited. Quality and excellence are the hallmarks of Beaches,
+                making us one of the most trusted brands in the world. It’s this
+                proven track record and best-in-class approach that has our
+                guests returning time and time again.
+              </p>
+            </div>
+          </div>
+          <div class="hallmarkBrands">
+            <img src="img/Logos.png" alt="hallmark logos" />
+          </div>
+          <div class="hallmarkVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RQ3tXlwr7vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="mood">
+        <div class="mood-container row">
+          <div class="rightText col-md-6">
+            <h1 class="blueTitle">A Bar to Match</h1>
+            <h1 class="darkTitle">Every Mood</h1>
+            <p class="mt-3 moodP">
+              With unlimited drinks in as many as 15 bars per resort, nobody
+              knows how to party like Beaches. By day, swim-up bars, oceanside
+              bars, and beachside divans invite you to indulge in chilled rum
+              concoctions and any beverage of your choice. By night, go bar
+              hopping or dance barefoot to the exotic rhythms of island music at
+              beachside watering holes—all under a canopy of stars.
+            </p>
+          </div>
+          <div class="leftBox col-md-2">
+            <div class="innerBox">
+            <img class="servImg" src="./img/servsafe_logo.png"/>
+              <p class="text-light text-center">
+                And all Beaches bartenders are trained and certified by
+                ServSafe®, a rigorous food and beverage safety training and
+                certification program administered by the National Restaurant
+                Association.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="img/sliderImg.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/slider2.png" style="width:100%" />
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+      </script>
+
+      <!--Cocktails-->
+      <section id="cocktails">
+        <div class="cocktails-container">
+          <div class="cocktailTitle">
+            <h1 class="blueTitle text-center">Specialty Cocktails</h1>
+            <h2 class="tiny-txt2 text-center">IN OUR BARS & PUBS</h2>
+            <div class="bartenderText">
+              <h4 class="tiny-txt3">OUR BARTENDERS ARE EXPERTS AT POURING</h4>
+              <h4 class="tiny-txt3">& MIXING THE BEST COCKTAILS</h4>
+            </div>
+          </div>
+          <div class="cocktail-grid row">
+            <img
+              src="img/cocktails/Rum Runner1.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+            <img
+              src="img/cocktails/Mojito.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+            <img
+              src="img/cocktails/Margarita.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+            <img
+              src="img/cocktails/Pina colada.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+            <img
+              src="img/cocktails/lagoon.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+            <img
+              src="img/cocktails/Bahama Mama.png"
+              class="col-md-4 col-sm-6 "
+              alt=""
+            />
+          </div>
+          <div class="bartenderText2">
+            <h4 class="tiny-txt4">
+              AND MORE WITH OUR PREMIUM LIQUORS AT
+              <span class="tiny-txt3"> NO EXTRA COST</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!--Wines-->
+      <section id="wines">
+        <div class="row wines-container">
+          <div class="col-md-4 box">
+            <img src="img/Robert Mondavi.png" alt="" />
+          </div>
+          <div class="col-md-4 box">
+            <img src="img/Appleton Estate.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--Beach Video-->
+      <section id="beachVideo">
+        <div class="beach-container">
+          <div class="middleBox">
+            <img src="img/Video.png" onClick="openModal()" alt="" />
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2D1t1RDLJ9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+      </script>        
+      
+
+      <!--Inclusions-->
+      <section id="inclusions">
+        <div class="inclusions-container">
+          <img src="img/Beaches Logo.png" alt="" />
+          <h1 class="darkTitle">More Quality Inclusions</h1>
+          <h1 class="tiny-txt5 mt-3 mb-3">
+            THAN ANY OTHER RESORT ON THE PLANET
+          </h1>
+          <button class="mt-4 inclusionBtn">View All Inclusions</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-container">
+          <div class="row">
+            <div class="col-md-4 text-center"></div>
+            <div class="col-md-4 text-center">
+              <img class="footerBeaches" src="img/beaches_FP_Logo1.png" alt=""/>
+            </div>
+            <div class="col-md-4 row socials p-3">
+              <h2 class="tiny-txt6">Follow:</h2>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-separator"></div>
+        <div class="links-container">
+          <div class="row w-100 text-center">
+            <div class="col box">
+              <h1 class="tiny-txt7">Book a Vacation</h1>
+              <p class="footerText">Book Online</p>
+              <p class="footerText">Get a price quote</p>
+              <p class="footerText">View Specials</p>
+              <p class="footerText">Find a Travel agent</p>
+              <p class="footerText">View locations</p>
+              <p class="footerText">Vacations deals</p>
+            </div>
+            <div class="col box">
+              <h1 class="tiny-txt7">Already Booked?</h1>
+              <p class="footerText">Chek-in Online</p>
+              <p class="footerText">Book optional extras</p>
+              <p class="footerText">Balance payment</p>
+              <p class="footerText">Butler preferences</p>
+            </div>
+            <div class="col box">
+              <h1 class="tiny-txt7">The Resorts</h1>
+              <p class="footerText">Turks & caicos resort</p>
+              <p class="footerText">Jamaica resorts</p>
+              <p class="footerText">Compare resorts</p>
+            </div>
+            <div class="col box">
+              <h1 class="tiny-txt7">Weddings & Honeymoons</h1>
+              <p class="footerText">weddings</p>
+              <p class="footerText">Honeymoons</p>
+              <p class="footerText">free wedding</p>
+              <p class="footerText">be inspired</p>
+              <p class="footerText">Inclusions</p>
+              <p class="footerText">locations</p>
+              <p class="footerText">your guests</p>
+              <p class="footerText">planning</p>
+              <p class="footerText">wdding FAQs</p>
+            </div>
+            <div class="col box">
+              <h1 class="tiny-txt7">About Beaches</h1>
+              <p class="footerText">FAQs</p>
+              <p class="footerText">terms & conditions</p>
+              <p class="footerText">employment</p>
+              <p class="footerText">cookies & privat policy</p>
+              <p class="footerText">our resorts family</p>
+              <p class="footerText">the sandals foundaiton</p>
+              <p class="footerText">all-inclusive resorts</p>
+              <p class="footerText">testimonials</p>
+              <p class="footerText">request a brochure</p>
+              <p class="footerText">accesibility</p>
+              <p class="footerText">site</p>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-separator mobile-none"></div>
+        <div class="footer-nav">
+          <div class="row text-center">
+            <div class="col-md-2">
+              <p class="footerText2">FOR RETURNING GUESTS</p>
+            </div>
+            <div class="col-md-2">
+              <p class="footerText2">FOR GROUPS</p>
+            </div>
+            <div class="col-md-2">
+              <p class="footerText2">NEWS</p>
+            </div>
+            <div class="col-md-2">
+              <p class="footerText2">FOR TRAVEL AGENTS</p>
+            </div>
+            <div class="col-md-2">
+              <p class="footerText2">FOR AFFILIATES</p>
+            </div>
+            <div class="col-md-2">
+              <p class="footerText2">CONTACT US</p>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-separator"></div>
+        <div class="contact-container">
+          <div class="phone-container">
+            <h1 class="lrg-txt">1-888-Beaches</h1>
+            <div class="side">
+              <p class="footerText4">(888) 232-2437</p>
+              <p class="footerText3">OPEN 24 HRS A DAY</p>
+            </div>
+          </div>
+
+          <div class="help">
+            <img class="footerEs" src="./img/spanish.png" />
+            <p class="footerText3">Ayuda en español</p>
+          </div>
+
+          <div class="contacts col-sm-12">
+            <div class="col-md-6 col-sm-12 row box">
+              <img class="footerContact" src="./img/Flag_of_Europe.svg.png" />
+              <p class="footerText5">EUROPE +44 207 581 9895</p>
+            </div>
+            <div class="col-md-6 col-sm-12 row box">
+              <img class="footerContact" src="./img/earth-icon.png" />
+              <p class="footerText5">WOLRDWIDE INFORMATION</p>
+            </div>
+          </div>
+
+          <div class="family">
+            <p class="footerText6">Also part of our family:</p>
+            <div class="row">
+              <div class="col box">
+                  <img class="footerImg" src="./img/sandals logo.png" />
+              </div>
+              <div class="col box">
+                <img class="footerImg" src="./img/fowl-cay-resort-exumas-bahamas-logo-vector-removebg-preview.png" />
+              </div>
+              <div class="col box">
+                <img class="footerImg" src="./img/your-jamaican-villas-logo-49110F80B3-seeklogo.com.png" />
+              </div>
+              <div class="col box">
+                <img class="footerImg" src="./img/grand-pineapple-logo.png" />
+              </div>
+              <div class="col box">
+                <img class="footerImg" src="./img/Sandals-Foundation-Logo.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
+</html>
